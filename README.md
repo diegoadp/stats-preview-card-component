@@ -10,11 +10,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -41,20 +37,10 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
 - Flexbox
-
-### What I learned
-
-### Continued development
 
 ### Useful resources
 
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
+MDN | CSS-Tricks | Stack Overflow
 
