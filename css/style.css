@@ -1,4 +1,5 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+html {
     font-size: 15px;
     font-family: Inter, Helvetica, sans-serif;
     font-weight: 400;
@@ -13,40 +14,138 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
+    margin: 0 2vw;
 }
 
 .text-container {
     background-color: hsl(244, 38%, 16%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: inline-block;
     border-radius: 10px 0 0 10px;
     width: 540px;
     height: 446px;
 }
 
+.text-container-top {
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 700;
+    margin: 12.5% 12.5% 5%;
+}
+
+.text-container-top span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text-container-middle {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-align: left;
+    line-height: 1.7;
+    margin: 0 20% 18% 12.5%;
+}
+
 .stats {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 20% 0 12.5%;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.stats h3 {
+    font-weight: 700;
+}
+
+.stats h4 {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.8rem;
+    margin-top: 12px;
+    text-transform: uppercase;
 }
 
 .image-container {
-    background-image: url(../images/image-header-desktop.jpg);
-    background-color: hsl(274.4,49.7%,35.1%);
-    background-blend-mode: overlay;
-    background-size: cover;
+    background-color: hsl(277, 64%, 61%);
     border-radius: 0 10px 10px 0;
     width: 540px;
     height: 446px;
 }
 
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    mix-blend-mode: multiply;
+    border-radius: inherit;
+}
+
 .attribution {
-    font-size: 11px;
+    font-size: 1rem;
     text-align: center;
     margin: 1rem auto;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-container {
+        border-radius: 0 0 10px 10px;
+    }
+    .image-container {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        margin: 10vh 2.5vw;
+    }
+    .main-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        object-fit: contain;
+        width: 92%;
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        height: auto;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+    }
+    .text-container-top {
+        font-size: 1.9rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .text-container-middle {
+        margin: 0 10%;
+        text-align: center;
+    }
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 0;
+    }
+    .stats-text {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .image-container {
+        width: 92%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    .attribution {
+        font-size: 0.8rem;
+    }
 }
